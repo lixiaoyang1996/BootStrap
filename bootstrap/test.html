@@ -9,7 +9,35 @@
 </head>
 
 <body>
-  <span style="font-size: 24px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">滚动监听</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section41">Section 4-1</a></li>
+                    <li><a href="#section42">Section 4-2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <span style="font-size: 24px; padding: 70px;">
     <form class="form-search">
       <br>
       <input type="text" class="input-medium search-query">
@@ -410,17 +438,17 @@
   <span class="caret"></span>
 </button>
 <ul class="dropdown-menu">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
+  <li role="presentation"tabindex="-1"><a href="##">CSS3</a></li>
+  <li role="presentation"tabindex="-1"><a href="##">HTML5</a></li>
+  <li role="presentation"tabindex="-1"><a href="##">Sass</a></li>
 </ul>
-</div>
+</div>//按钮中插入ul
 
 <ul class="breadcrumb">
   <li><a href="#">首页</a><span class="divider"></span></li>
   <li><a href="#">首页</a><span class="divider"></span></li>
   <li><a href="#">首页</a><span class="divider"></span></li>
-</ul>
+</ul>//面包屑布局
 
 <!-- <div class="hreo-unit">
   <div class="page-header">
@@ -431,11 +459,43 @@
   <a href="#" class="btn btn-primary btn-large">Learn more</a>
 </div> -->
 
-<div class="well">
+<div class="well well-large">
   Look i am in a well;
 </div>
+
+
+
+<!-- <ul class="nav nav-pills" id="myTab"style="padding-top:50px">
+  <li class="active"><a href="#home" data-toggle="tab">首页</a></li>
+  <li><a href="#profile" data-toggle="tab">php</a></li>
+  <li><a href="#messages" data-toggle="tab">js</a></li>
+  <li><a href="#settings" data-toggle="tab">bootstrap</a></li>
+</ul>
+   <div class="tab-content">
+      <div class="tab-pane active" id="home">这里是首页</div>
+      <div class="tab-pane" id="profile">php php php</div>
+      <div class="tab-pane" id="messages">js js js</div>
+      <div class="tab-pane" id="settings">bootstrap bootstrap bootstrap</div>
+    </div>   //导航栏标签内容的切换
+     -->
+
+    <button class="btn btn-info" type="button" data-toggle="popover" data-placement="bottom" title="提示框居左" data-content="我是弹出框的内容">click Me!</button>
+
+    <div class="alert alert-danger" role="alert" style="padding-top: 20px;margin-top:20px;">
+      <h4>谨防被骗</h4>
+      <p>货到付款，避免被骗，不要轻易转账给陌生人</p>
+      <a href="#" class="btn btn-danger" data-dismiss="alert">Close!</a>
+    </div>
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+$(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
 </body>
 
 </html>
