@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap 101 Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+  <span style="font-size: 24px;">
+    <form class="form-search">
+      <br>
+      <input type="text" class="input-medium search-query">
+      <button type="submit" class="btn btn-primary">Search</button>
+      <br>
+    </form>
+  </span>
+
+  <!-- <span style="font-size: 24px;">
+    <form class="form-inline">
+      <br>
+      <input type="text" class="input-small" placeholder="Email">
+      <br>
+      <input type="password" class="input-small" placeholder="Password">
+      <br>
+      <label class="checkbox">
+        <br>
+        <input type="checkbox"> Remember me
+        <br>
+      </label>
+      <br>
+      <button type="submit" class="btn btn-group-vertical">Sign in</button>
+      <br>
+    </form>
+  </span> -->
+
+
+
+  <!-- <span style="font-size: 24px;">
+    <form class="form-horizontal">
+      <br>
+      <div class="control-group">
+        <br>
+        <label class="control-label" for="inputEmail">Email</label>
+        <br>
+        <div class="controls">
+          <br>
+          <input type="text" id="inputEmail" placeholder="Email">
+          <br> </div>
+        <br> </div>
+      <br>
+      <div class="control-group">
+        <br>
+        <label class="control-label" for="inputPassword">Password</label>
+        <br>
+        <div class="controls">
+          <br>
+          <input type="password" id="inputPassword" placeholder="Password">
+          <br> </div>
+        <br> </div>
+      <br>
+      <div class="control-group">
+        <br>
+        <div class="controls">
+          <br>
+          <label class="checkbox">
+            <br>
+            <input type="checkbox"> Remember me
+            <br> </label>
+          <br>
+          <button type="submit" class="btn">Sign in</button>
+          <br> </div>
+        <br> </div>
+      <br>
+    </form>
+  </span> -->
+
+  <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+  </label>
+  <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+  </label>
+  <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+  </label>
+  <br>
+  <br>
+
+  <select multiple="multiple">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <br>
+  <br>
+
+  <div class="input-prepend">
+    <span class="add-on">姓名</span>
+    <input class="span2" id="prependedInput" type="text" placeholder="Username">
+    <button class="btn" type="button">Go!</button>
+  </div>
+  <div class="input-append">
+    <input class="span2" id="appendedInput" type="text">
+    <span class="add-on">.00</span>
+  </div>
+<br><br>
+
+搜索表单：<form class="form-search">
+    <div class="input-append">
+      <input type="text" class="span2 search-query">
+      <button type="submit" class="btn">Search</button>
+    </div>
+    <div class="input-prepend">
+      <button type="submit" class="btn">Search</button>
+      <input type="text" class="span2 search-query">
+    </div>
+  </form><br>
+
+输入焦点:<input class="input-xlarge" id="focusedInput" type="text" value="This is focused..."><br>
+无效输入:<input class="span3" type="email" required><br>
+被禁用的输入框:<input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled><br>
+验证状态:<div class="control-group warning">
+  <label class="control-label" for="inputWarning">Input with warning</label>
+  <div class="controls">
+    <input type="text" id="inputWarning">
+    <span class="help-inline">Something may have gone wrong</span>
+  </div>
+</div>
+  
+<div class="control-group danger">
+  <label class="control-label" for="inputError">密码</label>
+  <div class="controls">
+    <input type="text" id="inputError">
+    <span class="help-inline">请输入正确的密码！</span>
+  </div>
+</div>
+  
+<div class="control-group info">
+  <label class="control-label" for="inputInfo">Input with info</label>
+  <div class="controls">
+    <input type="text" id="inputInfo">
+    <span class="help-inline">Username is already taken</span>
+  </div>
+</div>
+  
+<div class="control-group success">
+  <label class="control-label" for="inputSuccess">Input with success</label>
+  <div class="controls">
+    <input type="text" id="inputSuccess">
+    <span class="help-inline">Woohoo!</span>
+  </div>
+</div>
+<br>
+
+<!-- <p><code>&lt;header&gt;</code> 作为内联元素被包围。</p>
+<p>如果需要把代码显示为一个独立的块元素，请使用 <pre> 标签：</p>
+<pre>
+  &lt;article&gt;
+    &lt;h1&gt;Article Heading&lt;/h1&gt;
+  &lt;/article&gt;
+</pre><br><br> -->
+
+<!-- <div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+       爱好<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+       <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">逛街</a>
+       </li>
+       <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">吃饭</a>
+       </li>
+       <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">下棋</a>
+       </li>
+       <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">游泳</a>
+       </li>
+    </ul>
+ </div> -->
+
+<div class="dropdown">
+  <button type="button" class="btn dropdown-toggle btn-success " id="dropdownMenu1" data-toggle="dropdown">
+    主题
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation" class="dropdown-submenu">
+      <a role="menuitem" tabindex="-1" href="#">Java</a>
+
+      <ul class="dropdown-menu">
+        <li>博思</li>
+        <li>博思</li>
+        <li>博思</li>
+      </ul>
+    </li>
+    <li role="presentation" class="disabled">
+      <a role="menuitem" tabindex="-1" href="#" >数据挖掘</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">
+        数据通信/网络
+      </a>
+    </li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+    </li>
+  </ul>
+</div>
+
+<div class="btn-wrap">
+  <div class="btn-group btn-group-justified ">
+    <a class="btn btn-default" href="#">首页</a>
+    <a class="btn btn-default" href="#">产品展示</a>
+    <a class="btn btn-default" href="#">案例分析</a>
+    <a class="btn btn-default" href="#">联系我们</a>
+  </div>
+</div>
+
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="##">Home</a></li>
+  <li><a href="##">CSS3</a></li>
+  <li><a href="##">Sass</a></li>
+  <li><a href="##">jQuery</a></li>
+  <li class="disabled"><a href="##">Responsive</a></li>
+  </ul>
+  <br>
+
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="##">Home</a></li>
+  <li><a href="##">CSS3</a></li>
+  <li><a href="##">Sass</a></li>
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+         Java <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+         <li><a href="#">Swing</a></li>
+         <li><a href="#">jMeter</a></li>
+         <li><a href="#">EJB</a></li>
+         <li class="divider"></li>
+         <li><a href="#">分离的链接</a></li>
+      </ul>
+   </li><br>
+
+    <ul class="nav nav-list">
+      <li class="nav-header">List Header</li>
+      <li class="active"><a href="#">首页</a></li>
+      <li><a href="#">php</a></li>
+    </ul><br>
+
+    <div class="table"> 
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">php</a></li>
+          <li><a href="#tab2" data-toggle="tab">bootstrap</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <p>like php</p>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <p>like bootstrap</p>
+          </div>
+        </div>
+      </div>
+
+<!-- <ul class="pagination pagination-lg">
+  <li>
+    <a href="#">&laquo;第一页</a>
+  </li>
+  <li>
+    <a href="#">11</a>
+  </li>
+  <li>
+    <a href="#">12</a>
+  </li>
+  <li class="active">
+    <a href="#">13</a>
+  </li>
+  <li>
+    <a href="#">14</a>
+  </li>
+  <li>
+    <a href="#">15</a>
+  </li>
+  <li class="disabled">
+    <a href="#">最后一页&raquo;</a>
+  </li>
+</ul>
+
+<ul class="pager">
+  <li>
+    <a href="#">&laquo;上一页</a>
+  </li>
+  <li>
+    <a href="#">下一页&raquo;</a>
+  </li>
+</ul>
+
+<ul class="pager">
+  <li class="previous">
+    <a href="#">&laquo;上一页</a>
+  </li>
+  <li class="next">
+    <a href="#">下一页&raquo;</a>
+  </li>
+</ul>
+
+<ul class="pager">
+  <li class="disabled">
+    <span>&laquo;上一页</span>
+  </li>
+  <li>
+    <a href="#">下一页&raquo;</a>
+  </li>
+</ul> -->
+
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Title</a>
+  </div>
+  <ul class="nav">
+    <li class="active">
+      <a href="#">首页</a>
+    </li>
+    <li>
+      <a href="#">Link</a>
+    </li>
+    <li>
+      <a href="#">Link</a>
+    </li>
+  </ul>
+</div>
+<br>
+<br>
+
+<ul class="thumbnails">
+  <li class="span4">
+    <a class="thumbnail" href="#">
+      <img src="img/logo.png" alt="">
+    </a>
+  </li>
+</ul>
+<br>
+<br>
+
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>
+<br>
+<br>
+
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/touxiang.png" alt="">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">里皮</h4>
+    大家都给我努力拿下韩国
+    <div clas="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="img/touxiang.png" alt="2">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">曾诚</h4>
+        No problem!
+      </div>
+    </div>
+  </div>
+</div>
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/touxiang.png" alt="">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">郑智</h4>
+    会尽力的！
+  </div>
+</div>
+<br>
+<br>
+<!-- <ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge-success">13</span>揭开bootSrap面纱
+  </li>
+  <li class="list-group-item">
+    <span class="badge-warning">1356</span>css的发展史
+  </li>
+</ul>
+<br><br> -->
+
+<div class="list-group">
+  <a class="list-group-item " href="">
+    <h4 class="list-group-item-heading">css</h4>
+    <p class="list-group-item-text">3.14</p>
+  </a>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn-small btn-info">Action</button>
+<button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+</div>
+
+<ul class="breadcrumb">
+  <li><a href="#">首页</a><span class="divider"></span></li>
+  <li><a href="#">首页</a><span class="divider"></span></li>
+  <li><a href="#">首页</a><span class="divider"></span></li>
+</ul>
+
+<!-- <div class="hreo-unit">
+  <div class="page-header">
+    <h1>页面标题实例</h1>
+    <small>No</small>
+  </div>
+  <p>Tagline</p>
+  <a href="#" class="btn btn-primary btn-large">Learn more</a>
+</div> -->
+
+<div class="well">
+  Look i am in a well;
+</div>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
